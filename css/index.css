@@ -1296,7 +1296,7 @@ footer {
   top: calc(50% - 0.35rem);
   left: 0;
   color: #f47466;
-  content: "\f0c1";
+  content: "";
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 0.8rem;
   -webkit-transition: all 0.2s ease-out;
