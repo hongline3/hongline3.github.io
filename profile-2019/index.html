@@ -1,19 +1,41 @@
-extends partial/layout.pug
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
-
-block container
-    include mixins/post.pug
-    +post(page)
-
-block pagination
-    include mixins/paginator.pug
-    +post()
-
-block copyright
-    include partial/copyright.pug
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Profile"><meta name="keywords" content=""><meta name="author" content="Jonggeun Hong,undefined"><meta name="copyright" content="Jonggeun Hong"><title>Profile | Development diary</title><link rel="shortcut icon" href="/my-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Jonggeun Hong</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">1</span></a></div></div></div><nav class="no-bg" id="nav" style="background-image: url(true)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Development diary</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span></div><div id="site-info"><div id="site-title">Development diary</div><div id="site-sub-title">HEXLAB Co. Pvt.</div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><article id="page"><h1>Profile</h1><div class="article-container"><h2 id="Personal-Data"><a href="#Personal-Data" class="headerlink" title="Personal Data"></a>Personal Data</h2><ul>
+<li><strong>Name</strong> : 홍종근 (Jong-geun Hong)</li>
+<li><strong>Address</strong> : Daejeon-Si, Korea republic of</li>
+<li><strong>Blog</strong> : <a href="https://hongline3.github.io/">https://hongline3.github.io/</a></li>
+<li><strong>Email</strong> : <a href="mailto:jonggeun@hexlab.kr" target="_blank" rel="noopener">jonggeun@hexlab.kr</a></li>
+</ul>
+<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul>
+<li><strong>2014. 03 ~ 2019. 02</strong> 대전대학교 정보보안학과 졸업</li>
+<li><strong>2014. 07 ~ 2015. 02</strong> KITRI 차세대보안리더 ‘Best of the Best’ 3기 교육생 수료</li>
+<li><strong>2011. 03 ~ 2014. 02</strong> 포항OO고등학교 졸업</li>
+</ul>
+<h2 id="Personal-Experience"><a href="#Personal-Experience" class="headerlink" title="Personal Experience"></a>Personal Experience</h2><ul>
+<li><strong>2014 ~ Current</strong> : FrozenBeer Hacking Team</li>
+</ul>
+<h2 id="프로젝트"><a href="#프로젝트" class="headerlink" title="프로젝트"></a>프로젝트</h2><h4 id="ChristmasCTF-2015"><a href="#ChristmasCTF-2015" class="headerlink" title="ChristmasCTF 2015"></a>ChristmasCTF 2015</h4><ul>
+<li><a href="https://github.com/hongline3/Christmas-CTF" target="_blank" rel="noopener">https://github.com/hongline3/Christmas-CTF</a></li>
+<li>2015.12</li>
+<li>대회 웹사이트 Front-end 디자인/개발</li>
+<li>대회운영</li>
+</ul>
+<h4 id="ChristmasCTF-2014"><a href="#ChristmasCTF-2014" class="headerlink" title="ChristmasCTF 2014"></a>ChristmasCTF 2014</h4><ul>
+<li>2014.12</li>
+<li>대회 웹사이트 Front-end 디자인/개발</li>
+<li>대회운영</li>
+</ul>
+<h4 id="설이네과메기"><a href="#설이네과메기" class="headerlink" title="설이네과메기"></a>설이네과메기</h4><ul>
+<li><a href="http://www.seulee.com" target="_blank" rel="noopener">http://www.seulee.com</a></li>
+<li>2013.10 ~ 2014. 02. (총 5개월)</li>
+<li>WHOIS쇼핑몰 프론트앤드 디자인/개발 및 상품상세페이지 제작</li>
+<li>사용언어 및 도구 : <code>HTML</code> <code>Javascript</code> <code>CSS</code> <code>Photoshop</code></li>
+</ul>
+</div></article><nav id="pagination"><div class="pagination"></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2019 By Jonggeun Hong</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span><span></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script></body></html>
